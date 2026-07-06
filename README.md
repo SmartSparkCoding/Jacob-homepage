@@ -13,3 +13,15 @@ In the future, I may expand this project to maybe show the NASA image, or a a se
 ## Macondo Description: 
 
 A single static page that reads three different APIs to make a custom homepage you can set as your browser's new-tab background. NASA picks the picture, JavaScript handles the clock, and Open-Meteo pulls live weather for wherever you're sitting.
+
+## Features
+
+- Live NASA Astronomy Picture of the Day background
+- Real-time digital clock (HH:MM:SS)
+- Live weather using Open-Meteo API
+  - Temperature (°C)
+  - Wind speed (mph)
+  - Chance of rain (%)
+- Geolocation-based weather detection
+- Seconds since birth uptime counter
+- Fully responsive browser homepage dashboard
