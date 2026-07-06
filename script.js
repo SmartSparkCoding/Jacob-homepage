@@ -107,7 +107,7 @@ function updateLifeCounter() {
     let days = Math.floor(hours / 24);
 
     document.getElementById("life").innerText =
-        `${totalSeconds.toLocaleString()} seconds since birth`;
+        `${totalSeconds.toLocaleString()} Uptime in Seconds`;
 }
 
 updateLifeCounter();
