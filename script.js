@@ -1,11 +1,11 @@
 const background = document.getElementById("background");
 
 async function getBackground() {
-    const url = "apod.json";
-
+    const url = 
+        "https://jacob-homepage-nasa.jacob-navaratne.workers.dev/";
+    
     try {
         const response = await fetch(url);
-
         if (!response.ok) {
             throw new Error(`Response status: ${response.status}`);
         }
@@ -19,11 +19,10 @@ async function getBackground() {
         }
 
         return result.url;
-
-    } catch (error) {
+        } catch (error) {
         console.log(error.message);
         return null;
-    }
+        }
 }
 
 window.onload = function () {
