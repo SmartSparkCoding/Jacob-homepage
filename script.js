@@ -1,11 +1,11 @@
 const background = document.getElementById("background");
 
 async function getBackground() {
-    const url = 
-        "https://api.nasa.gov/planetary/apod?api_key=Hc5V6qPj5x4womwC57wM3b9ocvlzC90kXgTyA3tJ";
-    
+    const url = "apod.json";
+
     try {
         const response = await fetch(url);
+
         if (!response.ok) {
             throw new Error(`Response status: ${response.status}`);
         }
@@ -19,10 +19,11 @@ async function getBackground() {
         }
 
         return result.url;
-        } catch (error) {
+
+    } catch (error) {
         console.log(error.message);
         return null;
-        }
+    }
 }
 
 window.onload = function () {
